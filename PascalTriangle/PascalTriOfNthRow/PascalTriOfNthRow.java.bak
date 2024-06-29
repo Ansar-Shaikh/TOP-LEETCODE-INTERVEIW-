@@ -1,0 +1,19 @@
+class  PascalTriOfNthRow
+{
+	public static int  NthRow(int n){
+		 int ans=1;
+		 System.out.println(ans);
+		 for (int i=0;i<n ;i++ )
+		 {
+			 ans*=n-1;
+			 ans/=i+1;
+		 }
+		 return ans;
+
+	}
+	public static void main(String[] args) 
+	{
+		
+		System.out.println(NthRow(6));
+	}
+}
